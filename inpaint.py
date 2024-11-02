@@ -13,8 +13,7 @@ def sd_inpaint():
 
     device = "cuda"
     model_path = "runwayml/stable-diffusion-inpainting"
-    mytoken = "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"
-
+    
     pipe = StableDiffusionInpaintPipeline.from_pretrained(
         model_path,
         variant="fp16",
